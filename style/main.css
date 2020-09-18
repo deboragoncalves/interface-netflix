@@ -1,0 +1,44 @@
+/* Declarar variáveis que são usadas em toda a estilização. Sempre com "--" antes. */
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* elemento não ultrapassa o tamanho da div pai */
+}
+
+/* Elementos base */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header .container {
+    display: flex; /* em linha */
+    align-items: center; /* alinhar na vertical */
+    justify-content: space-between; /* espaço entre os elementos filhos, h2 e nav */
+}
+    
