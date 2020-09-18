@@ -41,4 +41,48 @@ header .container {
     align-items: center; /* alinhar na vertical */
     justify-content: space-between; /* espaço entre os elementos filhos, h2 e nav */
 }
+
+/* Filme Principal */
+
+.main-movie {
+    font-size: 16px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/images/atletaA.jpg'); /* linear gradient: facilitar leitura. exige duas cores. */
+    background-size: cover; /* cobre toda a div pai */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* alinhamento vertical */
+    align-items: flex-start; /* esquerda para direita */
+}
+
+.movie-title {
+    margin-top: 15%; /* %: adapta-se ao tamanho da tela */
+    font-size: 40px;
+    font-family: ‘Trebuchet MS’, Arial, sans-serif;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.button {
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all; /* ease all: transição leve */
+}
+
+.button i { 
+    margin-right: 8px; 
+}
+
+.button:hover { 
+    background-color: white; 
+    color: rgba(0, 0, 0, .50); 
+}
     
